@@ -1,0 +1,81 @@
+body {
+    font-family: "Microsoft JhengHei", Arial, sans-serif;
+}
+.head{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color:orange;
+    justify-content: flex-start
+}
+.nav-title{
+    font-size: 2.rem;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 5px solid black
+}
+.head-ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.head-ul-li{
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 60px;
+    font-size: 1.25rem;
+    color:black;
+}
+.head-ul-li:hover{
+    color:rgb(255, 255, 255);
+}
+.head-ul-li-active{
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 60px;
+    font-size: 1.5rem;
+    color:rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 600px) {
+    .head{
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color:orange;
+        justify-content: flex-start
+    }
+    .nav-title{
+        font-size: 1.25rem;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-right: 5px solid black
+    }
+    .head-ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+    .head-ul-li{
+        text-decoration: none;
+        font-weight: bold;
+        padding-right: 30px;
+        font-size: 0.75rem;
+        color:black;
+    }
+    .head-ul-li:hover{
+        color:rgb(255, 255, 255);
+    }
+    .head-ul-li-active{
+        font-weight: bold;
+        text-decoration: none;
+        padding-right: 30px;
+        font-size: 1rem;
+        color:rgb(255, 255, 255);
+    }
+
+}

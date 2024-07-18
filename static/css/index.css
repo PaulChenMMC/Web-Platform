@@ -1,0 +1,169 @@
+.select-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 120px;
+    
+  }
+  .Select-Cam{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  }
+  .Select-Cam label {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  .Select-Cam select {
+    font-size: 1.5rem;
+  }
+
+  .Record-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  }
+  .Record-type p {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  .Record-type select {
+    font-size: 1.5rem;
+  }
+  
+  .SID {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  }
+  .SID p {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  .SID input{
+    font-size: 1.5rem;
+  }
+
+  .Video-area {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 640px;
+
+  }
+
+  .Video-area video{
+    height: 640px;
+    background-color: rgb(179, 177, 177);
+  }
+
+  .Buttom-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+  }
+  
+  .Buttom {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 25%;
+  }
+  
+  .Record {
+    background-color:forestgreen;
+    font-size: 1.75rem;
+    width: 150px;
+    margin-right: 50px;
+  }
+  
+  .Stop {
+    background-color:crimson;
+    font-size: 1.75rem;
+    width: 150px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .Select-Cam label {
+      font-size: 1rem;
+      margin-right: 10px;
+    }
+    .Select-Cam select {
+      font-size: 1rem;
+    }
+    .Record-type p {
+      font-size: 1rem;
+      margin-right: 10px;
+    }
+    .Record-type select {
+      font-size: 1rem;
+    }
+    .SID p {
+      font-size: 1rem;
+      margin-right: 10px;
+    }
+    .SID input{
+      font-size: 1rem;
+    }
+
+    .select-item select {
+        font-size: 1rem;
+    }
+
+    .Video-area {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+    }
+
+    .Video-area video{
+        height: 300px;
+        background-color: rgb(179, 177, 177);
+    }
+
+    .Buttom-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+        height: 30px;
+    }
+      
+    .Buttom {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+      
+      .Record {
+        background-color:forestgreen;
+        font-size: 1.25rem;
+        margin-right: 30px;
+        width: 90px;
+      }
+      
+      .Stop {
+        background-color:crimson;
+        font-size: 1.25rem;
+        width: 90px;
+      }
+
+  }

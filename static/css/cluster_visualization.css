@@ -1,0 +1,194 @@
+.select-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 140px;
+}
+.has-data {
+  background-color: red;
+}
+
+.Record-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.Record-type p {
+font-size: 1.5rem;
+margin-right: 10px;
+}
+
+.Record-type select {
+font-size: 1.5rem;
+}
+
+.p{
+    font-size: 1.5rem;
+}
+
+.Select-ID {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.Select-ID p {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.Select-option{
+    font-size: 1.5rem;
+}
+.Select-ID select {
+  font-size: 1.5rem;
+  }
+  
+
+
+.Select-Date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.Select-Date p {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.Select-option{
+    font-size: 1.5rem;
+}
+.Select-Date1{
+    font-size: 1.5rem;
+}
+
+
+.Select-ID p {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+.Select-ID input{
+  font-size: 1.5rem;
+  width:150PX;
+}
+
+.img-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    max-width: 100%;
+    height:600;
+}
+
+.img {
+    max-width: 100%; /* 图片最大宽度为容器宽度 */
+    max-height: 100%; /* 图片最大高度为容器高度 */
+}
+
+.Buttom-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+  }
+  
+  .Buttom {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 25%;
+  }
+
+  .Start {
+    background-color:forestgreen;
+    font-size: 1.75rem;
+    width: 150px;
+    margin-right: 30px;
+  }
+
+
+@media screen and (max-width: 700px) {
+    .Record-type p {
+        font-size: 1rem;
+      }
+      .Record-type select {
+        font-size: 1rem;
+      }
+
+    .Select-ID p {
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+    .Select-option{
+        font-size: 1rem;
+    }
+    .Select-Date {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Select-Date p {
+        margin-right: 10px;
+        font-size: 1rem;
+        margin: 10px;
+    }
+    
+    .Select-option{
+        font-size: 1rem;
+    }
+    .Select-Date1{
+        font-size: 1rem;
+    }
+    .Start{
+        font-size: 1rem;
+    }
+    .Buttom-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+        height: 30px;
+    }
+    .AGE p {
+        font-size: 1rem;
+        margin-right: 10px;
+      }
+      .AGE input{
+        font-size: 1rem;
+      }
+  
+    .Gender-type p {
+        font-size: 1rem;
+        margin-right: 10px;
+      }
+      .Gender-type select {
+        font-size: 1rem;
+      }
+
+    .Buttom {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+      
+      .Start {
+        background-color:forestgreen;
+        font-size: 1.25rem;
+        margin-right: 30px;
+        width: 90px;
+      }
+
+  }
