@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ZH">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/cluster_visualization.css') }}">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    </head>
+    <header>
+        <title>STS System</title>
+        <nav class="head">
+            <H1 class="nav-title">FailRisk</H1>
+            <ul class="head-ul">
+                <li><a class="head-ul-li" href="{{ url_for('index') }}">Record Video</a></li>
+                <li><a class="head-ul-li-active" href="{{ url_for('cluster_visualization') }}">Report</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <div class="select-item">
+            <div class="Record-type">
+                <p>Clinical test : </p>
+                <select id="Record_type">
+                    <option value="30s STS">30s STS</option>
+                    <option value="Standing on one foot">Standing on one foot</option>
+                    <option value="Standing front and back">Standing front and back</option>
+                </select>
+            </div>
+
+            <div class="Select-ID">
+                <p>Select-SID : </p>
+                <select id="Select_ID" class="Select-option">
+                    <option value="option1">NA</option>
+                </select>
+            </div>
+
+            <div class="Select-Date">
+                <p>Date : </p>
+                <input class="Select-Date1" type="date" id="start-datePicker">
+            </div>
+        </div>
+
+        <div class="Buttom-area">
+            <div class="Buttom">
+                <button id=start class="Start">Query</button>
+            </div>
+        </div>
+
+        <div class="img-container" style={{img_State}}>
+            <img  class= "img" id="plotImage" src="{{ url_for('static', filename='initialize.png') }}" alt="Sample Plot">
+            <input type="hidden" id="newImageFilename" value="{{ new_image_filename }}">
+        </div>   
+
+
+        <script src="{{ url_for('static', filename='js/cluster_visualization.js') }}"></script>
+    </body>
+</html>

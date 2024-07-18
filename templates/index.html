@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ZH">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/nav.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    </head>
+    <header>
+        <title>FailRisk</title>
+        <nav class="head">
+            <H1 class="nav-title">FailRisk</H1>
+            <ul class="head-ul">
+                <li><a class="head-ul-li-active" href="{{ url_for('index') }}">Record Video</a></li>
+                <li><a class="head-ul-li" href="{{ url_for('cluster_visualization') }}">Report</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <div class="select-item">
+
+            <div class="Select-Cam">
+                <label id=selectCam for="videoDevices">Select Camera : </label>
+                <select id="videoDevices" onchange="ShoWVideo();"></select><br> 
+            </div>
+
+            <div class="Record-type">
+                <p>Clinical test : </p>
+                <select id="Record_type">
+                    <option value="30s STS">30s STS</option>
+                    <option value="Standing on one foot">Standing on one foot</option>
+                    <option value="Standing front and back">Standing front and back</option>
+                </select>
+            </div>
+
+            <div class="SID">
+                <p>SID : </p>
+                <input type="text" id="SID" value="">
+            </div>
+
+        </div>
+        <div class="Video-area">
+            <video autoplay="true" id="videoElement"></video>
+        </div>
+        <div class="Buttom-area">
+            <div class="Buttom">
+                <button id=Startbutton onclick="startRecording()" class="Record">Record</button>
+                <button id=Stopbutton onclick="stopRecording()" class="Stop">Stop</button>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/webcam.js') }}"></script>
+    </body>
+</html>
