@@ -1,0 +1,8 @@
+Scripts\activate env
+
+Execution app.py
+
+Open CMD
+
+cd app.py Path
+C:\Users\chunc\Desktop\python\Flask\ssl-proxy.exe -from 0.0.0.0:443 -to localhost:8051
